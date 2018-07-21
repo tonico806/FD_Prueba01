@@ -11,7 +11,7 @@ package Ejecutar;
  */
 public class Notas {
     public static void main(String[] args) {
-       double[] notas = new double [4];
+      /* double[] notas = new double [4];
       
        notas[0]=18;
        notas[1]=13;
@@ -29,8 +29,17 @@ public class Notas {
        
        }
        
-        System.out.println("La nota mayor es" + mayor);
-      
+        System.out.println("La nota mayor es" + mayor);*/
+        
+        double[] notas = {11.5,15,12,17,20};
+        
+        double notamayor = 0;
+        
+        for (int i=0; i < notas.length; i++){
+            if(notas[i] > notamayor)
+                notamayor=notas[i];
+        }
+        System.out.println("La nota mayor es= "+ notamayor);
         
     }
     
